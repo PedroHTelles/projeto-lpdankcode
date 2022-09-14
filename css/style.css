@@ -1,0 +1,402 @@
+@charset "UTF-8";
+
+:root{
+	--cor1: #212343;
+	--cor2: #363a6d;
+	--cor3: #dddddd;
+	--cor4: #b5b5b5;
+}
+
+/* FIRST MOBILE */
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	box-sizing: border-box;
+}
+
+body, html{
+	height: 100%;
+}
+
+/* <header> */
+header{
+	background-color: var(--cor1);
+
+	height: 80px;
+
+	text-align: center;
+
+	padding-top: 20px;
+
+	box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.407);
+
+	transition: 0.5s;
+}
+
+
+/* <main> <section id="form"> */
+main section#form{
+	background-color: var(--cor2);
+	background-image: url(../images/header_bg.png);
+	background-size: cover;
+
+	color: var(--cor4);
+
+	padding-bottom: 30px;
+
+	transition: 0.5s;
+}
+
+main section#form form{
+	border: 10px solid var(--cor4);
+	border-radius: 2px;
+
+	background-color: white;
+
+	box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.407);
+
+	width: 400px;
+	height: 590px;
+
+	margin: 0 auto;
+	padding: 15px;
+
+	transform: translate(0, -20px);
+
+	transition: 0.5s;
+}
+main section#form form h2{
+	font-size: 1.2em;
+	text-align: justify;
+	font-weight: normal;
+}
+
+main section#form form div{
+	margin: 20px 0;
+
+	width: 100%;
+}
+
+main section#form form label{
+	font-size: 1.1em;
+
+	display: block;
+
+	margin-bottom: 15px;
+}
+
+main section#form form div input{
+	width: 100%;
+
+	padding: 15px;
+
+	border-radius: 4px;
+	border: 1px solid var(--cor4);
+	outline: none;
+}
+
+main section#form form p{
+	margin: 30px 0;
+}
+
+main section#form form > input{
+	display: block;
+
+	font-size: 2em;
+	color: white;
+	font-variant: small-caps;
+
+	padding: 0px 50px;
+
+	margin: 40px auto;
+
+	background-color: var(--cor2);
+
+	border: none;
+	border-radius: 3px;
+}
+
+main section#form form > input:hover{
+	cursor: pointer;
+
+	background-color: #363a6df1;
+
+	transition-duration: 0.5s;
+}
+
+main section#form ul{
+	list-style-position: inside;
+
+	width: 400px;
+
+	background-color: #363a6d7d;
+
+	padding: 15px;
+	margin: 0 auto;
+
+	border-radius: 3px;
+
+	box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.407);
+
+	transition: 0.5s;
+}
+
+main section#form ul li{
+	margin: 10px 0;
+}
+
+
+/* <main> <section id="text"> */
+main section#text{
+	position: relative;
+
+	background-color: var(--cor3);
+
+	padding: 30px 20px 50px 20px;
+
+	box-shadow: inset 3px 3px 15px rgba(0, 0, 0, 0.149);
+
+	transition: 0.5s;
+}
+
+main section#text h1{
+	text-align: center;
+	font-weight: normal;
+
+	margin-bottom: 15px;
+}
+
+main section#text p{
+	text-align: justify;
+
+	max-width: 900px;
+
+	padding-bottom: 50px;
+}
+
+main section#text img{
+	width: 50px;
+
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+
+/* <main> <section id="image"> */
+main section#image{
+	margin: 30px 20px;
+
+	transition: 0.5s;
+}
+
+main section#image h2{
+	text-align: center;
+	font-weight: normal;
+
+	padding-top: 50px;
+}
+
+
+main section#image div.centralizar > div{
+	margin: 55px auto;
+
+	max-width: 500px;
+
+	text-align: center;
+
+	transition: 0.5s;
+}
+
+main section#image div.centralizar div p{
+	text-align: justify;
+}
+
+
+/* <main> <footer> */
+footer{
+	padding: 20px;
+
+	border-top: 2px solid black;
+
+	text-align: center;
+
+	opacity: 0.5;
+}
+
+
+@media screen and (min-width:800px) and (max-width:990px){
+	header{
+		text-align: left;
+
+		padding-left: 50px;
+		padding-top: 30px;
+
+		transition: 0.5s;
+	}
+
+	main section#form{
+		height: 600px;
+
+		transition: 0.5s;
+	}
+
+	main section#form form{
+		float: right;
+
+		margin-right: 2%;
+
+		transition: 0.5s;
+	}	
+
+	main section#form ul{
+		float: left;
+
+		width: 350px;
+
+		margin-top: 100px;
+		margin-left: 10px;
+
+		transition: 0.5s;
+	}
+
+	main section#image div.centralizar > div{
+		max-width: 350px;
+
+		margin: 55px auto;
+	}
+
+}
+
+@media screen and (min-width:990px) and (max-width:1200px){
+	header{
+		text-align: left;
+
+		padding-left: 20%;
+		padding-top: 30px;
+
+		transition: 0.5s;
+	}
+
+	main section#form{
+		height: 600px;
+
+		transition: 0.5s;
+	}
+
+	main section#form form{
+		float: right;
+
+		margin-right: 4%;
+
+		transition: 0.5s;
+	}	
+
+	main section#form ul{
+		float: left;
+
+		width: 350px;
+
+		margin-top: 100px;
+		margin-left: 4%;
+
+		transition: 0.5s;
+	}
+
+	main section#text p{
+		margin: auto;
+
+		transition: 0.5s;
+	}
+
+	main section#image h2{
+		margin-bottom: 80px;
+
+		transition: 0.5s;
+	}
+
+	div.centralizar{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		width: 100%;
+	}
+
+	main section#image div.centralizar > div{
+		width: 28%;
+
+		transition: 0.5s;
+	}
+}
+
+
+@media screen and (min-width:1200px){
+	header{
+		text-align: left;
+
+		padding-left: 20%;
+		padding-top: 30px;
+
+		transition: 0.5s;
+	}
+
+	main section#form{
+		height: 600px;
+
+		transition: 0.5s;
+	}
+
+	main section#form form{
+		float: right;
+
+		margin-right: 10%;
+
+		transition: 0.5s;
+	}	
+
+	main section#form ul{
+		float: left;
+
+		width: 470px;
+
+		margin-top: 100px;
+		margin-left: 10%;
+
+		transition: 0.5s;
+	}
+
+	main section#form ul li{
+		margin: 25px 0;
+	}
+
+	main section#text p{
+		margin: auto;
+
+		transition: 0.5s;
+	}
+
+	main section#image h2{
+		margin-bottom: 80px;
+
+		transition: 0.5s;
+	}
+
+	div.centralizar{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		width: 100%;
+		max-width: 1400px;
+	}
+
+	main section#image div.centralizar > div{
+		width: 28%;
+		max-width: 350px;
+
+		transition: 0.5s;
+	}
+}
