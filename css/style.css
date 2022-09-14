@@ -25,7 +25,7 @@ body, html{
 header{
 	background-color: var(--cor1);
 
-	height: 80px;
+	height: 100px;
 
 	text-align: center;
 
@@ -51,20 +51,22 @@ main section#form{
 }
 
 main section#form form{
-	border: 10px solid var(--cor4);
+	border: 10px solid #b5b5b57c;
 	border-radius: 2px;
 
 	background-color: white;
+	background-clip: padding-box;
 
 	box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.407);
 
-	width: 400px;
+	width: 95%;
+	max-width: 400px;
 	height: 590px;
 
 	margin: 0 auto;
 	padding: 15px;
 
-	transform: translate(0, -20px);
+	transform: translate(0, -30px);
 
 	transition: 0.5s;
 }
@@ -130,7 +132,8 @@ main section#form form > input:hover{
 main section#form ul{
 	list-style-position: inside;
 
-	width: 400px;
+	width: 95%;
+	max-width: 400px;
 
 	background-color: #363a6d7d;
 
